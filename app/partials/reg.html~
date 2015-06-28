@@ -1,0 +1,35 @@
+Registration page <br/>
+<div class="container-fluid">
+      <div class="row">Sign in to your account</div>
+      <div class="row">
+	 <div class="col-md-2">
+	   <!--Sidebar content-->
+	   First Name: <input value="Enter firstname">
+	 </div>
+	<div class="col-md-2">
+	   <!--Sidebar content-->
+	   Middle Name: <input value="Enter middlename">
+	 </div>
+	<div class="col-md-2">
+	   <!--Sidebar content-->
+	   Last Name: <input value="Enter lastname">
+	 </div>
+      </div>
+      <br/>
+      <div class="row">
+	 <div class="col-md-2">
+	   <!--Sidebar content-->
+	   Email Address: <input value="Enter email">
+	 </div>
+      <div class="row">
+	<button ng-click="regSubmit()">
+  	   Sign In
+	</button>
+      </div>
+      
+      <div class="row">
+	<button ng-click="regReset()">
+  	   Reset
+	</button>
+      </div>
+  </div>

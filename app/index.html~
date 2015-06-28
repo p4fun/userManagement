@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" xmlns:ng="http://angularjs.org">
+<head>
+  <meta charset="utf-8">
+  <title>User Management App</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="https://code.angularjs.org/1.3.15/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.3.15/angular-route.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+<script type='text/javascript'>
+  function startApp() {
+    angular.bootstrap(document, ['userManagement']);  
+  }
+  </script>
+</head>
+
+<body ng-app="UserManagementApp" ng-controller="driversController">
+  <div ng-view>
+  </div>
+</div>
+</body>
+</html>

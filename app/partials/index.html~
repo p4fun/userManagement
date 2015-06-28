@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>User Management App</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="../../bower_components/angular/angular.js"></script>
+  <script src="../../bower_components/angular-route/angular-route.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/controllers.js"></script>
+</head>
+<body ng-app="UserManagementApp" ng-controller="driversController">
+  <div ng-view>
+  <div class="container-fluid">
+      <div class="row">Sign in to your account</div>
+      <div class="row">
+	 <div class="col-md-2">
+	   <!--Sidebar content-->
+	   <input value="Enter username">
+	 </div>
+      </div>
+      <br/>
+      <div class="row">
+	 <div class="col-md-10">
+	   <!--Sidebar content-->
+	   <input value="Enter password">
+	 </div>
+      </div>
+      <br/>
+      <div class="row">
+	<button ng-click="loginSubmit()">
+  	   Sign In
+	</button>
+      </div>
+      
+      <div class="row">
+	<button ng-click="createAccount()">
+  	   Create New Account
+	</button>
+      </div>
+  </div>
+</div>
+</body>
+</html>
