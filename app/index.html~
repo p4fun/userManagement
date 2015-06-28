@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>User Management App</title>
-  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <script src="https://code.angularjs.org/1.3.15/angular.min.js"></script>
   <script src="https://code.angularjs.org/1.3.15/angular-route.min.js"></script>
@@ -16,7 +15,7 @@
   </script>
 </head>
 
-<body ng-app="UserManagementApp" ng-controller="driversController">
+<body ng-app="UserManagementApp" ng-controller="loginController">
   <div ng-view>
   </div>
 </div>

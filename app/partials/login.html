@@ -3,14 +3,14 @@
       <div class="row">
 	 <div class="col-md-2">
 	   <!--Sidebar content-->
-	   <input value="Enter username">
+	   <input value="Enter username" ng-model="userEmail" ng-model-options="{ updateOn: 'blur' }">
 	 </div>
       </div>
       <br/>
       <div class="row">
 	 <div class="col-md-10">
 	   <!--Sidebar content-->
-	   <input value="Enter password">
+	   <input value="Enter password"  ng-model="userPass" ng-model-options="{ updateOn: 'blur' }">
 	 </div>
       </div>
       <br/>

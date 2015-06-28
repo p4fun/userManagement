@@ -1,3 +1,24 @@
-<div class="container-fluid">
-Landing page
-</div>
+<div class="container-fluid" data-ng-init="initLanding()"/>
+      <div class="row">Landing Page </div>
+      <div class="row">
+	<button ng-click="listOfUsers()">
+  	   List Of Users
+	</button>
+      </div>
+      
+      <div class="row">
+	<button ng-click="listOfMessages()">
+  	   List of Messages
+	</button>
+      </div>
+
+      <div class="row">
+	<button ng-click="sendMessage()">
+  	   Send Message
+	</button>
+      </div>
+      
+      <div class="row"> 
+	<div id="result" name="result" ng-bind-html="result">{{listData}}</div>
+      </div>
+  </div>

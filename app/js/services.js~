@@ -14,7 +14,7 @@
 
 'use strict';
 
-angular.module('photoHunt.services', [])
+angular.module('userManagement.services', [])
     .factory('Conf', function($location) {
       function getRootUrl() {
         var rootUrl = $location.protocol() + '://' + $location.host();
@@ -23,7 +23,7 @@ angular.module('photoHunt.services', [])
         return rootUrl;
       };
       return {
-        'clientId': '2678320381-qgaa5efm05qo1scotrp94geksdp2cci1.apps.googleusercontent.com',
+        'clientId': '561544982448-trm5gufq8penjjj0hbkgp42g5duc026n.apps.googleusercontent.com',
         'apiBase': '/api/',
         'rootUrl': getRootUrl(),
         'scopes': 'https://www.googleapis.com/auth/plus.login ',
@@ -32,7 +32,7 @@ angular.module('photoHunt.services', [])
          'cookiepolicy': 'single_host_origin'
       };
     })
-    .factory('PhotoHuntApi', function($http, Conf) {
+    .factory('UserManagementApi', function($http, Conf) {
       return {
         signIn: function(authResult) {
           return $http.post(Conf.apiBase + 'connect', authResult);
